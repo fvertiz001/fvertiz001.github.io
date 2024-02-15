@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Literature Flashcards</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f0f0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .card {
+        width: 200px;
+        height: 300px;
+        perspective: 1000px;
+        position: relative;
+        margin: 20px;
+        cursor: pointer;
+    }
+    .card-inner {
+        width: 100%;
+        height: 100%;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+    }
+    .card:hover .card-inner {
+        transform: rotateY(180deg);
+    }
+    .card-front, .card-back {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        backface-visibility: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .card-front {
+        transform: rotateY(0deg);
+    }
+    .card-back {
+        transform: rotateY(180deg);
+    }
+    .question {
+        font-size: 17px; /* Tamaño de letra ajustado */
+        text-align: center; /* Centrar texto */
+    }
+    .answer {
+        font-size: 16px; /* Tamaño de letra ajustado */
+        text-align: center; /* Centrar texto */
+    }
+</style>
+</head>
+<body>
+<div class="card">
+    <div class="card-inner">
+        <div class="card-front">
+            <div class="question">Who wrote the novel "To Kill a Mockingbird"?</div>
+        </div>
+        <div class="card-back">
+            <div class="answer">Harper Lee</div>
+        </div>
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-inner">
+        <div class="card-front">
+            <div class="question">What is the setting of F. Scott Fitzgerald's novel "The Great Gatsby"?</div>
+        </div>
+        <div class="card-back">
+            <div class="answer">Long Island and New York City in the 1920s</div>
+        </div>
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-inner">
+        <div class="card-front">
+            <div class="question">Who is the author of the epic poem "Paradise Lost"?</div>
+        </div>
+        <div class="card-back">
+            <div class="answer">John Milton</div>
+        </div>
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-inner">
+        <div class="card-front">
+            <div class="question">What famous novel features the character Holden Caulfield as its protagonist?</div>
+        </div>
+        <div class="card-back">
+            <div class="answer">"The Catcher in the Rye" by J.D. Salinger</div>
+        </div>
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-inner">
+        <div class="card-front">
+            <div class="question">Which Shakespearean play features the characters Romeo and Juliet?</div>
+        </div>
+        <div class="card-back">
+            <div class="answer">"Romeo and Juliet"</div>
+        </div>
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-inner">
+        <div class="card-front">
+            <div class="question">Who is the author of the fantasy series "The Lord of the Rings"?</div>
+        </div>
+        <div class="card-back">
+            <div class="answer">J.R.R. Tolkien</div>
+        </div>
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-inner">
+        <div class="card-front">
+            <div class="question">What is the title of George Orwell's dystopian novel about a totalitarian regime?</div>
+        </div>
+        <div class="card-back">
+            <div class="answer">"1984"</div>
+        </div>
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-inner">
+        <div class="card-front">
+            <div class="question">Which Russian author wrote the novels "Crime and Punishment" and "The Brothers Karamazov"?</div>
+        </div>
+        <div class="card-back">
+            <div class="answer">Fyodor Dostoevsky</div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
+
