@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fatima's Kitchen</title>
+    <style>
+        /* Estilos básicos */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #F08784;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            background-color:#FFA0A0;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #000000;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: #FFD1DC;
+            color: #000000;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* Estilos de tabla */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #dddddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Fatima's Kitchen</h1>
+    </header>
+    
+<nav>
+    <ul>
+        <li><a href="home.html" target="_self">Home</a></li>
+        <li><a href="about.html" target="_self">About</a></li>
+        <li><a href="menu.html" target="_self">Menu</a></li>
+        <li><a href="contact.html" target="_self">Contact</a></li>
+        <li><a href="gratitude.html" target="_self">Gratitude</a></li>
+        <li><a href="pictures.html" target="_self">Pictures</a></li>
+    </ul>
+</nav>
+
+<main>
+    <section>
+        <h2>About My Small Business</h2>
+        <p>It is a small business called "Fatima's Kitchen". I started selling cookies when I was 9 years old, now I am 14 years old and have expanded the dessert list. I have always sought to learn new methods to make desserts. On one occasion I had the opportunity to go to a class with my aunt and we learned how to use the pastry bag. I first started this business because I love making desserts and also my goal is to save to pay for some things I would like to buy and always have money saved.</p>
+        <img src="broownie.jpg" width="650" height="350"/> <img src="tortagalleta.jpg" width="650" height="350"/>
+    </section>
+
+    <!-- Lista en inglés -->
+    <script>
+        var english_list = ["blender", "ingredients", "cake molds", "oven"];
+        document.write("<h2>Things I used to start a small business:</h2>");
+        document.write("<ul>");
+        for (var i = 0; i < english_list.length; i++) {
+            document.write("<li>" + english_list[i] + "</li>");
+        }
+        document.write("</ul>");
+    </script>
+ <p>Here are two links for more information:</p>
+    <ul>
+        <li><a href="https://www.howtocook.recipes/" target="_blank">How to start cooking?</a></li>
+        <li><a href="https://www.bbcgoodfood.com/recipes/collection/easy-recipes" target="_blank">Easy Recipes</a></li>
+    </ul>
+
+    <!-- Video local -->
+    <section>
+        <h2>Example Video</h2>
+        <video width="560" height="315" controls>
+            <source src="cake.mp4" type="video/mp4">
+        </video>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 My Web Page</p>
+</footer>
+
+</body>
+</html>

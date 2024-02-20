@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fatima's kitchen</title>
+    <style>
+        /* Basic styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #F08784;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            background-color:#FFA0A0;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #000000;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: #FFD1DC;
+            color: #000000;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* Table styles */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #dddddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        /* Image styles */
+        img {
+            width: 1300px; 
+            height: 500px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        /* Form styles */
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"], input[type="email"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Fatima's kitchen</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="home.html" target="_self">Home</a></li>
+            <li><a href="about.html" target="_self">About</a></li>
+            <li><a href="menu.html" target="_self">Menu</a></li>
+            <li><a href="contact.html" target="_self">Contact</a></li>
+            <li><a href="gratitude.html" target="_self">Gratitude</a></li>
+            <li><a href="pictures.html" target="_self">Pictures</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        
+    <img src="broownie.jpg" width="500" height="600"/>
+
+        <!-- Contact Form Section -->
+        <section>
+            <h2>Contact Us For More Information</h2>
+            <form action="mailto:example@example.com" method="post" enctype="text/plain">
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="fname" required>
+
+                <label for="lname">Last Name:</label>
+                <input type="text" id="
+                lname" name="lname" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My Web Page</p>
+    </footer>
+
+</body>
+</html>
