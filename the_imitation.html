@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Imitation</title>
+<style>
+/* Agrega aquí el CSS proporcionado */
+.dinosaur {
+    filter: hue-rotate(90deg) drop-shadow(-5px -5px 5px #000000);
+}
+
+.butterfly {
+    filter: invert(100%);
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.penguins {
+    border-radius: 50%;
+    border: 1px solid black;
+    filter: sepia(1);
+}
+
+.seagull-container {
+    position: relative;
+    display: inline-block;
+}
+
+.seagull {
+    position: relative;
+    z-index: 1;
+}
+
+.seagull-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom right, lightblue, white);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.theater-stage-container {
+    position: relative;
+    display: inline-block;
+}
+
+.theater-stage {
+    filter: blur(5px);
+}
+
+.presentation-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font: 24px Arial, sans-serif;
+    color: white;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.football-field {
+    filter: grayscale(100%);
+    border: 27px solid transparent;
+    border-image: url('Images/tic-tac-toe.png') 27 round;
+    border-image-repeat: round;
+}
+</style>
+</head>
+<body>
+<h1>The imitation</h1>
+<div class="image-container">
+    <img src="butterfly.jpg" alt="Image 2" class="butterfly">
+     <img src="dinosaur.png" alt="Image 1" class="dinosaur">
+    <img src="penguins.jpg" alt="Image 3" class="penguins">
+    <div class="seagull-container">
+        <img src="seagull.png" alt="Image 4" class="seagull">
+    </div>
+    <div class="theater-stage-container">
+        <img src="theater_stage.jpg" alt="Image 5" class="theater-stage">
+    
+        <div class="presentation-text">Presentation Text</div>
+    </div>
+    <img src="football_field.jpg" alt="Image 6" class="football-field">
+</div>
+</body>
+</html>
